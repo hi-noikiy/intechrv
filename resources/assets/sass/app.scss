@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
 
 // Variables
 @import 'variables';
@@ -9,6 +9,119 @@
 @import '~bootstrap/scss/bootstrap';
 
 .navbar-laravel {
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.90);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.carousel-caption {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.0rem;
+    color: #f1f2f2;
+}
+
+.carousel-caption.blue {
+    background-color:  rgba(5,209,209,0.65);
+}
+
+.carousel-caption.orange {
+    background-color:  rgba(212,94,38,0.5);
+}
+
+.carousel-caption.rad-5 {
+    border-radius: 5px;
+}
+
+.carousel-caption.rad-10 {
+    border-radius: 10px;
+}
+
+.luna {
+    .luna {
+        border: none;
+        padding: 0 15px;
+    }
+
+    .luna:before, .luna:after {
+        width: 0;
+    }
+
+    .rover {
+        .badge {
+            transform: rotate(-15deg);
+            box-shadow: 1px 1px 2px $gray;
+        }
+    }
+}
+
+.flyer, .luna {
+    position: relative;
+    border-radius: 30px;
+    padding: 20px;
+
+    .title {
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+}
+
+.flyer {
+    border-top: 1px solid $orange;
+    color: $orange;
+}
+
+.luna {
+    border-top: 1px solid $light-blue;
+    color: $light-blue;
+}
+
+.flyer:before, .flyer:after, .luna:before, .luna:after {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    width: 1px;
+    height: 50%;
+}
+
+.flyer:before {
+    left: 0;
+    background-image: linear-gradient(#fff, $orange);
+}
+
+.flyer:after {
+    right: 0;
+    background-image: linear-gradient(#fff, $orange);
+}
+
+.luna:before {
+    left: 0;
+    background-image: linear-gradient(#fff, $light-blue);
+}
+
+.luna:after {
+    right: 0;
+    background-image: linear-gradient(#fff, $light-blue);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+
+    center {
+        a {
+            color: #fff;
+
+            span {
+                font-size: 1.5rem;
+                padding: 0 0.3rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1.0rem;
+        padding-right: 1.0rem;
+    }
 }
