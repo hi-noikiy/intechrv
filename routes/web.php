@@ -12,9 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/flyer/chase', function () {
+    return view('flyer.chase');
+});
+
+Route::get('/flyer/pursue', function () {
+    return view('flyer.pursue');
+});
+
+Route::get('/flyer/explore', function () {
+    return view('flyer.explore');
+});
+
+Route::get('/luna/luna-lite', function () {
+    return view('luna.luna-lite');
+});
+
+Route::get('/luna/luna-rover', function () {
+    return view('luna.luna-rover');
+});
+
+Route::get('/luna/luna', function () {
+    return view('luna.luna');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin/dashboard', 'DashboardController@index')->name('dashboard');

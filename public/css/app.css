@@ -10477,6 +10477,16 @@ a.text-dark:focus {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+.flyer-title {
+  color: #dd5f26;
+}
+
+.luna-title {
+  color: #05d1d1;
+}
+
+/*---------- Carousel ----------*/
+
 .carousel-caption {
   font-family: 'Raleway', sans-serif;
   font-size: 1.0rem;
@@ -10499,28 +10509,13 @@ a.text-dark:focus {
   border-radius: 10px;
 }
 
-.luna .luna {
-  border: none;
-  padding: 0 15px;
-}
-
-.luna .luna:before,
-.luna .luna:after {
-  width: 0;
-}
-
-.luna .rover .badge {
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
-  -webkit-box-shadow: 1px 1px 2px #58595b;
-          box-shadow: 1px 1px 2px #58595b;
-}
+/*---------- Flyer / Luna ----------*/
 
 .flyer,
 .luna {
   position: relative;
   border-radius: 30px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .flyer .title,
@@ -10537,6 +10532,27 @@ a.text-dark:focus {
 .luna {
   border-top: 1px solid #05d1d1;
   color: #05d1d1;
+}
+
+.luna .luna {
+  border: none;
+  padding: 0 15px;
+}
+
+.luna .luna:before,
+.luna .luna:after {
+  width: 0;
+}
+
+.luna a {
+  color: #05d1d1;
+}
+
+.luna .rover .badge {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  -webkit-box-shadow: 1px 1px 2px #58595b;
+          box-shadow: 1px 1px 2px #58595b;
 }
 
 .flyer:before,
@@ -10575,6 +10591,8 @@ a.text-dark:focus {
   background-image: linear-gradient(#fff, #05d1d1);
 }
 
+/*---------- Footer ----------*/
+
 footer {
   background-color: #333;
   color: #fff;
@@ -10589,10 +10607,18 @@ footer center a span {
   padding: 0 0.3rem;
 }
 
-@media (min-width: 992px) {
+/*---------- Media Queries ----------*/
+
+@media (min-width: 1200px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 1.0rem;
     padding-right: 1.0rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 0.8rem;
   }
 }
 

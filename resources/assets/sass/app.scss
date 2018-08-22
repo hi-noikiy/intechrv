@@ -9,10 +9,19 @@
 @import '~bootstrap/scss/bootstrap';
 
 .navbar-laravel {
-  background-color: rgba(255,255,255,0.90);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    background-color: rgba(255,255,255,0.90);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+.flyer-title {
+    color: $orange;
+}
+
+.luna-title {
+    color: $light-blue;
+}
+
+/*---------- Carousel ----------*/
 .carousel-caption {
     font-family: 'Raleway', sans-serif;
     font-size: 1.0rem;
@@ -35,28 +44,11 @@
     border-radius: 10px;
 }
 
-.luna {
-    .luna {
-        border: none;
-        padding: 0 15px;
-    }
-
-    .luna:before, .luna:after {
-        width: 0;
-    }
-
-    .rover {
-        .badge {
-            transform: rotate(-15deg);
-            box-shadow: 1px 1px 2px $gray;
-        }
-    }
-}
-
+/*---------- Flyer / Luna ----------*/
 .flyer, .luna {
     position: relative;
     border-radius: 30px;
-    padding: 20px;
+    padding: 10px;
 
     .title {
         margin-top: -30px;
@@ -72,6 +64,26 @@
 .luna {
     border-top: 1px solid $light-blue;
     color: $light-blue;
+
+    .luna {
+        border: none;
+        padding: 0 15px;
+    }
+
+    .luna:before, .luna:after {
+        width: 0;
+    }
+
+    a {
+        color: $light-blue;
+    }
+
+    .rover {
+        .badge {
+            transform: rotate(-15deg);
+            box-shadow: 1px 1px 2px $gray;
+        }
+    }
 }
 
 .flyer:before, .flyer:after, .luna:before, .luna:after {
@@ -103,6 +115,7 @@
     background-image: linear-gradient(#fff, $light-blue);
 }
 
+/*---------- Footer ----------*/
 footer {
     background-color: #333;
     color: #fff;
@@ -119,9 +132,16 @@ footer {
     }
 }
 
-@media (min-width: 992px) {
+/*---------- Media Queries ----------*/
+@media (min-width: 1200px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-left: 1.0rem;
         padding-right: 1.0rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 0.8rem;
     }
 }

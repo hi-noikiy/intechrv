@@ -15,22 +15,22 @@
                         Models <span class="caret"></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="">
+                        <a class="dropdown-item" href="/flyer/chase">
                             {{ __('Chase') }}
                         </a>
-                        <a class="dropdown-item" href="">
+                        <a class="dropdown-item" href="/flyer/pursue">
                             {{ __('Pursue') }}
                         </a>
-                        <a class="dropdown-item" href="">
+                        <a class="dropdown-item" href="/flyer/explore">
                             {{ __('Explore') }}
                         </a>
-                        <a class="dropdown-item" href="">
+                        <a class="dropdown-item" href="/luna/luna-lite">
                             {{ __('Luna Lite') }}
                         </a>
-                        <a class="dropdown-item" href="">
+                        <a class="dropdown-item" href="/luna/luna-rover">
                             {{ __('Luna Rover') }}
                         </a>
-                        <a class="dropdown-item" href="">
+                        <a class="dropdown-item" href="/luna/luna">
                             {{ __('Luna') }}
                         </a>
                     </div>
@@ -60,7 +60,7 @@
                 <form method="get" onSubmit="return weblocator(this);" class="form-inline">
                     <input name="acct" type="hidden" value="9076" class="form-control" />
                     <div class="input-group">
-                        <input name="zip" type="text" placeholder="U.S. Zip Code" size="20" maxlength="5" class="form-control" />
+                        <input name="zip" type="text" placeholder="U.S. Zip Code" size="15" maxlength="5" class="form-control" />
                         <div class="input-group-append">
                             <input type="submit" class="btn btn-outline-primary" value="Find A Dealer" />
                         </div>
@@ -86,7 +86,7 @@
                 @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }} <span class="caret"></span>
+                            {{ Auth::user()->first_name }} {{ Auth::user()->last_name }} <span class="caret"></span>
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
