@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,500,700');
 
 // Variables
 @import 'variables';
@@ -8,17 +8,13 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+body .container {
+    max-width: 100%;
+}
+
 .navbar-laravel {
     background-color: rgba(255,255,255,0.90);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
-.flyer-title {
-    color: $orange;
-}
-
-.luna-title {
-    color: $light-blue;
 }
 
 /*---------- Carousel ----------*/
@@ -113,6 +109,48 @@
 .luna:after {
     right: 0;
     background-image: linear-gradient(#fff, $light-blue);
+}
+
+/*---------- Product Pages ----------*/
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-indicators li.active {
+  background-color: #dd5f26;
+}
+
+.colors .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.colors .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.flyer-title {
+    color: $orange;
+}
+
+.luna-title {
+    color: $light-blue;
+}
+
+.svg-chase {
+    width: 100px;
+}
+
+.features p {
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.features p.content {
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
 /*---------- Footer ----------*/
