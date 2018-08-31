@@ -54,19 +54,19 @@
                     <div class="row">
                         <div class="chase col-md-4 px-0" align="center">
                             <a href="/flyer/chase">
-                                <img class="w-100" src="{{ asset('img/models/chase.png') }}" alt="Chase">
+                                <img class="w-100" src="{{ asset('img/models/chase/chase.png') }}" alt="Chase">
                                 Chase
                             </a>
                         </div>
                         <div class="pursue col-md-4 px-0" align="center">
                             <a href="/flyer/pursue">
-                                <img class="w-100" src="{{ asset('img/models/pursue.png') }}" alt="Pursue">
+                                <img class="w-100" src="{{ asset('img/models/pursue/pursue.png') }}" alt="Pursue">
                                 Pursue
                             </a>
                         </div>
                         <div class="explore col-md-4 px-0" align="center">
                             <a href="/flyer/explore">
-                                <img class="w-100" src="{{ asset('img/models/explore.png') }}" alt="Explore">
+                                <img class="w-100" src="{{ asset('img/models/explore/explore.png') }}" alt="Explore">
                                 Explore
                             </a>
                         </div>
@@ -81,19 +81,19 @@
                     <div class="row">
                         <div class="lite col-md-4 px-0" align="center">
                             <a href="/luna/luna-lite">
-                                <img class="w-100" src="{{ asset('img/models/luna-lite.png') }}" alt="Luna Lite">
+                                <img class="w-100" src="{{ asset('img/models/luna-lite/luna-lite.png') }}" alt="Luna Lite">
                                 Luna Lite
                             </a>
                         </div>
                         <div class="rover col-md-4 px-0" align="center">
                             <a href="/luna/luna-rover">
-                                <img class="w-100" src="{{ asset('img/models/luna-rover.png') }}" alt="Luna Rover">
+                                <img class="w-100" src="{{ asset('img/models/luna-rover/luna-rover.png') }}" alt="Luna Rover">
                                 <span class="badge badge-info">New</span> Luna Rover
                             </a>
                         </div>
                         <div class="luna col-md-4 px-0" align="center">
                             <a href="/luna/luna">
-                                <img class="w-100" src="{{ asset('img/models/luna.png') }}" alt="Luna">
+                                <img class="w-100" src="{{ asset('img/models/luna/luna.png') }}" alt="Luna">
                                 Luna
                             </a>
                         </div>
